@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="top-bar">
+        <button class="top-bar-left" icon="/common/categories.png"></button>
+        <button class="profile" icon="/common/profileDP.png"></button>
+    </div>
+    <div class="title">
+        <text style="font-weight : bold;">Discover our new items</text>
+    </div>
+    <div class="search-bar">
+        <search hint="Search" searchbutton="Search" @search="search">
+        </search>
+        <button class="filter" icon="/common/filter.jpeg" onclick="filter"></button>
+    </div>
+    <div class="coming-soon">
+        <image class="shoe-coming-soon" src={{shoeImage1}}></image>
+        <div class="coming-soon-text-wrapper">
+            <text style="font-weight : bold;">Running Unisex Shoes</text>
+            <text style="font-weight : bold; color : #ff0089ff">Coming soon</text>
+        </div>
+        <div class="notify-wrapper">
+            <switch showtext="false" texton="On" textoff="Off" checked="true" @change="switchChange">
+            </switch>
+            <text style="font-weight : 600;">Notify me</text>
+        </div>
+    </div>
+    <div class="categories">
+        <text class="categories-title" style="font-weight : bold;">Categories</text>
+        <div class="categories-wrapper">
+            <input class="category" type="button" value="Shoes"></input>
+            <input class="category" type="button" value="Table"></input>
+            <input class="category" type="button" value="Cupboard"></input>
+            <input class="category" type="button" value="Sofa"></input>
+        </div>
+    </div>
+    <div class="popular-shoes">
+        <text class="popular-shoes-title" style="font-weight : bold;">Popular Shoes</text>
+        <text class="view-all" style="font-weight : bold;">View All</text>
+        <button class="view-all-button" icon="/common/right-arrow.png" ></button>
+    </div>
+    <div class="shoes">
+        <input class="shoe-1" onclick="viewShoe">
+        </input>
+        <input class="shoe-2" onclick="viewShoe">
+        </input>
+    </div>
+    <toolbar class="bottom-bar">
+        <toolbar-item value="Home" icon="/common/home.png"></toolbar-item>
+        <toolbar-item value="Categories" icon="/common/categories.png"></toolbar-item>
+        <toolbar-item value="Notification" icon="/common/notification.jpg"></toolbar-item>
+        <toolbar-item value="My Cart" icon="/common/cart.png"></toolbar-item>
+    </toolbar>
+</div>

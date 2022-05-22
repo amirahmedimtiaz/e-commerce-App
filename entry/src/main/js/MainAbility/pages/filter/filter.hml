@@ -1,0 +1,64 @@
+<div class="container">
+    <div class="top-bar">
+        <button class="back-button" icon="/common/left-arrow.png" onclick="goBack"></button>
+        <text style="font-weight : bold; font-size : 45px; padding-right : 10px;">Filter</text>
+        <input class="dots" type="button" value=".."></input>
+    </div>
+    <div class="gender">
+        <text class="gender-title" style="font-weight : bold;">Gender</text>
+        <div class="gender-wrapper">
+            <input id="male" type="button" value="Male" ></input>
+            <input id="female" type="button" value="Female"></input>
+            <input id="both" type="button" value="Both"></input>
+        </div>
+    </div>
+    <div class="category">
+        <text class="titles" style="font-weight : bold;">Category</text>
+        <div class="category-wrapper">
+            <select class="categories" @change="changeFruit">
+                <option value="category1" >
+                    category1
+                </option>
+                <option value="category2">
+                    category2
+                </option>
+                <option value="category3" >
+                    category3
+                </option>
+            </select>
+        </div>
+    </div>
+    <div class="brand">
+        <text class="titles" style="font-weight : bold;">Brand</text>
+        <div class="brand-wrapper">
+            <select class="brands" @change="changeFruit">
+                <option value="brand1" >
+                    brand1
+                </option>
+                <option value="brand2">
+                    brand2
+                </option>
+                <option value="brand3" >
+                    brand3
+                </option>
+            </select>
+        </div>
+    </div>
+    <div class="price-slider">
+        <text class="titles" style="font-weight : bold;">Price</text>
+        <text class="price-value"> ₹{{currentValue}}</text>
+        <slider min="1000" max="10000" value="{{value}}" step="500" onchange="setValue" ></slider>
+    </div>
+    <text class="sizes-title" style="font-weight : bold;">Available Sizes</text>
+    <div class="available-size">
+        <toggle class="sizes" for="{{toggle_list}}" id="{{$item.id}}"
+                checked="{{$item.checked}}"
+                value="{{$item.name}}"
+                @change="allChange" @click="allClick({{$item.id}})">
+        </toggle>
+    </div>
+    <div class="add-to-cart">
+        <input type="button" class="clear-all"   >Clear All</input>
+        <input class="add" type="button"  >Add</input>
+    </div>
+</div>

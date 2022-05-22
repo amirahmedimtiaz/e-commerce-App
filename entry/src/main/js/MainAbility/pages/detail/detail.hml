@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="top-bar">
+        <button class="back-button" icon="/common/left-arrow.png" onclick="goBack"></button>
+        <text style="font-weight : bold; font-size : 45px; padding-right : 10px;">Detail</text>
+        <input class="dots" type="button" value=".."></input>
+    </div>
+    <image class="shoe" src="/common/shoe2.png"></image>
+    <text class="shoe-title" style="font-weight : bold; font-size : 45px;">Running Unisex Shoes</text>
+    <text class="shoe-price" style="font-weight : bold; font-size : 45px;">₹ 1400</text>
+    <text class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</text>
+    <div class="color-quantity">
+        <text style="font-weight : bold; font-size : 45px; padding-right : 10px;">Color</text>
+        <input type="radio"></input>
+        <input type="radio"></input>
+        <input type="radio"></input>
+    </div>
+    <text class="sizes-title" style="font-weight : bold; font-size : 45px; padding-right : 10px;">Available Sizes</text>
+    <div class="available-size">
+        <toggle class="sizes" for="{{toggle_list}}" id="{{$item.id}}"
+                checked="{{$item.checked}}"
+                value="{{$item.name}}"
+                @change="allChange" @click="allClick({{$item.id}})">
+        </toggle>
+    </div>
+    <div class="add-to-cart">
+        <button class="add-favourite" type="circle" icon="/common/heart.png"></button>
+        <button class="add" icon="/common/cart3.png" placement="end" >Add to Cart </button>
+    </div>
+</div>

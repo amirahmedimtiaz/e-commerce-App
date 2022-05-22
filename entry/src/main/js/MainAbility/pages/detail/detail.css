@@ -1,0 +1,132 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    font-size: 60px;
+    text-align: center;
+    width: 100%;
+    height: 40%;
+    margin: 10px;
+}
+
+.top-bar{
+    width: 100%;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.top-bar input{
+    border-radius:15px;
+    color:black;
+    background-color: rgb(220,220,220);
+    height: 4%;
+}
+
+.back-button{
+    icon-height: 20px;
+    icon-width: 20px;
+    width:10%;
+    height: 6%;
+    background-color: rgb(220,220,220);
+    border-radius: 15px;
+}
+
+.top-bar{
+    display: flex;
+    align-items: center;
+}
+
+.shoe{
+    height:30%;
+    width:90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 1px 2px 3px 4px rgba(0,0,0,0.25);
+}
+
+.shoe-title{
+    margin-left: 6%;
+    margin-top: 4%;
+    font-size: 15fp;
+}
+
+.shoe-price{
+    margin-left: 6%;
+    font-size: 15fp;
+}
+
+.description{
+    margin-left: 6%;
+    margin-right: 5%;
+    height: 15%;
+    font-weight: 500;
+    color: #ff838383;
+}
+
+.color-quantity{
+    margin-left: 5%;
+}
+
+.sizes-title{
+    margin-left: 5%;
+}
+
+.available-size{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.sizes{
+    margin:7%;
+    background-color:  rgb(220,220,220);
+    height: 70%;
+    font-size: 13fp;
+}
+
+.add-to-cart{
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.add-favourite{
+    width: 15%;
+/*    height: auto;*/
+    icon-height: 40px;
+    icon-width: 40px;
+    background-color: white;
+    box-shadow: 1px 2px 3px 4px rgba(0,0,0,0.15);
+    margin-left: 5%;
+    margin-right: 10%;
+}
+.add{
+    margin-left: 2%;
+    width:60%;
+    height: 75%;
+    font-size: 17fp;
+    font-weight: 900;
+    icon-width: 50px;
+    icon-height: 50px;
+    object-fit: contain;
+/*    background-image: url("/common/cart.png");*/
+    background-repeat: no-repeat;
+    background-size:20px 20px;
+}
