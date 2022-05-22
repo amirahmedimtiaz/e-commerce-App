@@ -7,6 +7,6 @@ UI built for HarmonyOS in JavaScript.
 ### Index
 ![](./index.png)
 ### Details
-![](./item_desc_page.png)
+![](./details.png)
 ### Filter
-![](./filter_page.png)
+![](./filter.png)
